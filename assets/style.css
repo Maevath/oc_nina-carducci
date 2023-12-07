@@ -79,13 +79,14 @@ picture img {
 }
 
 .about-me__title {
-	margin-top: 1em;
+	margin-top: 0.5em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
 
 .about-me__introduction {
 	font-family: 'Spectral';
+	font-size: 1rem;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
@@ -99,6 +100,7 @@ picture img {
 .title {
 	text-align: center;
 	padding-block: 2em;
+	z-index: 1;
 }
 
 .gallery .nav {
@@ -219,14 +221,7 @@ picture img {
 }
 
 .picture.right::before {
-	content: ' ';
-	background-color: #BEB45A;
-	width: 374px;
-	height: 329px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
+	display: none;
 }
 
 .form-container {
@@ -279,7 +274,7 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6,
+	#about-me h3,
 	#about-me p {
 		width: 100%;
 	}
@@ -326,12 +321,7 @@ input[type="submit"] {
 	}
 
 	#services .container::before {
-		width: 30%;
-		height: 100%;
-		bottom: 0;
-		right: 0;
-		left: auto;
-		z-index: 0;
+		display: none;
 	}
 
 	#contact .container {
