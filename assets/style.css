@@ -61,11 +61,6 @@ body {
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-
-	img {
-		width: 374px;
-		height: 329px;
-	}
 }
 
 .picture {
@@ -74,9 +69,9 @@ body {
 	z-index: 0;
 }
 
-.picture img {
+picture img {
 	width: 100%;
-
+	height: auto;
 }
 
 #about-me {
@@ -99,10 +94,6 @@ body {
 #about-me p {
 	width: 80%;
 	font-size: 14px;
-}
-
-#gallery {
-	/*	min-height: 100vh; */
 }
 
 .title {

@@ -9,7 +9,7 @@
 	<title>Nina Carducci</title>
 
 	<!-- Feuilles de style -->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
@@ -19,12 +19,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 	<!-- Scripts -->
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script defer src="./assets/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script defer src="./assets/maugallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
 </head>
+
 
 <body>
 	<header class="top-header">
@@ -40,6 +41,7 @@
 		</div>
 	</header>
 
+
 	<main>
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -52,29 +54,17 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<picture>
-						<source srcset="./assets/images/slider/ryoji_slider.webp" type="image/webp">
-						<img src="./assets/images/slider/ryoji_slider.jpg" class="d-block w-100" width="2500"
-							height="1156"
-							alt="Homme en costume de travail traversant un passage piéton avec détermination"
-							loading="eager">
-					</picture>
+					<img src="./assets/img/slider/ryoji-iwata_slider.webp" class="d-block w-100"
+						alt="Homme en costume de travail traversant un passage piéton avec détermination">
 				</div>
 				<div class="carousel-item">
-					<picture>
-						<source srcset="./assets/images/slider/green_slider.webp" type="image/webp">
-						<img src="./assets/images/slider/green_slider.jpg" class="d-block w-100" width="1024"
-							height="474"
-							alt="Foule en liesse dans la fosse lors d'un concert vibrant d'énergie et d'enthousiasme"
-							loading="lazy">
-					</picture>
+					<img src="./assets/img/slider/nicholas-green_slider.webp" class="d-block w-100"
+						alt="Foule en liesse dans la fosse lors d'un concert vibrant d'énergie et d'enthousiasme"
+						loading="lazy">
 				</div>
 				<div class="carousel-item">
-					<picture>
-						<source srcset="./assets/images/slider/cisneros_slider.webp" type="image/webp">
-						<img src="./assets/images/slider/cisneros_slider.jpg" class="d-block w-100" width="2500"
-							height="1156" alt="un marié et une mariée s'embrassant lors de leur mariage" loading="lazy">
-					</picture>
+					<img src="./assets/img/slider/edward-cisneros_slider.webp" class="d-block w-100"
+						alt="un marié et une mariée s'embrassant lors de leur mariage" loading="lazy">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -91,13 +81,8 @@
 
 		<div id="about">
 			<div class="picture left">
-				<picture>
-					<!-- Source WebP pour les navigateurs qui le supportent -->
-					<source srcset="./assets/images/nina.webp" type="image/webp">
-					<!-- Source JPEG pour les navigateurs qui ne supportent pas WebP -->
-					<img src="./assets/images/nina.jpg" width="500" height="499" alt="Portrait de Nina Carducci"
-						loading="eager">
-				</picture>
+				<img src="./assets/img/nina.webp" width="430" height="360" alt="Portrait de Nina Carducci"
+					loading="lazy">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -117,67 +102,49 @@
 			</div>
 		</div>
 		<div id="gallery">
-			<h3 class="title">Portfolio</h3>
+			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron_concerts.jpg"
-						srcset="./assets/images/gallery/concerts/aaron_concerts.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="473" height="630"
-						alt="Vue depuis la foule lors d'un concert, des tons orangés embrasent la scène" loading="lazy">
+					<img class="gallery-item" src="./assets/images/gallery/concerts/aaron_concerts.webp"
+						alt="Vue depuis la foule lors d'un concert, des tons orangés embrasent la scène"
+						loading="lazy" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali_entreprise.jpg"
-						srcset="./assets/images/gallery/entreprise/ali_entreprise.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="600" height="900"
+						src="./assets/img/gallery/entreprise/ali-morshedlou_entreprise.webp"
 						alt="Homme confiant en costume élégant, adossé à un mur les bras croisés" loading="lazy" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason_entreprise.jpg"
-						srcset="./assets/images/gallery/entreprise/jason_entreprise.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="541"
+						src="./assets/img/gallery/entreprise/jason-goodman_entreprise.webp"
 						alt="Femme extrêmement souriante participant avec enthousiasme à une réunion d'entreprise"
 						loading="lazy" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah_mariage.jpg"
-						srcset="./assets/images/gallery/mariage/hannah_mariage.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="533" height="800"
+						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"
 						alt="Main délicate du marié et de la mariée se tenant avec amour par les bouts des doigts"
 						loading="lazy" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade_portrait.jpg"
-						srcset="./assets/images/gallery/portraits/ade_portrait.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="534" height="800"
+						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"
 						alt="Portrait d'un homme faisant face au soleil, fermant les yeux avec intensité"
 						loading="lazy" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob_mariage.jpg"
-						srcset="./assets/images/gallery/mariage/jakob_mariage.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="640"
+						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"
 						alt="Mariée et marié marchant en se tenant la main avec un palmiers majestueux en arrière-plan"
 						loading="lazy" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino_portrait.jpg"
-						srcset="./assets/images/gallery/portraits/nino_portrait.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="533" height="800"
+						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"
 						alt="Femme rêveuse, derrière un grillage, se touchant les cheveux et regardant vers le sol"
 						loading="lazy" />
 
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin_concert.jpg"
-						srcset="./assets/images/gallery/concerts/austin_concert.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="670" height="447"
+						src="./assets/img/gallery/concerts/austin-neill_concerts.webp"
 						alt="Chanteur sur scène lors d'un concert en live, main tendue vers le haut, entouré de lumière"
 						loading="lazy" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus_entreprise.jpg"
-						srcset="./assets/images/gallery/entreprise/mateus_entreprise.webp 1024w"
-						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="490"
+						src="./assets/img/gallery/entreprise/mateus-campos_entreprise.webp"
 						alt="Femme riant aux éclats devant un ordinateur, regardant au loin, à côté d'une statue de la justice"
 						loading="lazy" />
 				</div>
@@ -261,12 +228,15 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<!-- <img src="./assets/images/camera.png"
+					<img src="./assets/img/camera.webp"
 						alt="Appareil photo artistiquement capturé, dans des teintes vibrantes d'orange et de bleu"
-						loading="lazy"> -->
+						loading="lazy">
 				</div>
 			</div>
 		</div>
+		<footer>
+			<p>© 2023 Nina Carducci, Tous droits réservés.</p>
+		</footer>
 	</main>
 </body>
 

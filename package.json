@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "live-serve": "^0.0.0"
+    "live-serve": "^0.0.0",
+    "uglifycss": "^0.0.29"
   }
 }
