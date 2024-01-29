@@ -259,7 +259,7 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-@media all and (max-width: 1180px) {
+@media only screen and (max-width: 1023px) {
 	.picture {
 		flex: 2;
 	}
@@ -267,6 +267,8 @@ input[type="submit"] {
 	#about,
 	#contact .container {
 		align-items: center;
+		gap: 1rem;
+
 	}
 
 	.about-me__title {
@@ -281,6 +283,11 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1000px) {
+	body {
+		width: 100%;
+		height: 100%;
+	}
+
 	#about {
 		flex-direction: column;
 
@@ -326,6 +333,7 @@ input[type="submit"] {
 
 	#contact .container {
 		flex-direction: column;
+		gap: 1rem;
 	}
 
 	#contact .picture.right {
@@ -342,7 +350,9 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+
+
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;

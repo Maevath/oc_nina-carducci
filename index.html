@@ -54,13 +54,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+	<!-- Préchargement de l'image -->
+	<link rel="preload" href="./assets/images/slider/ryoji_slider.jpg" as="image">
+
 	<!-- Scripts -->
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script defer src="./assets/maugallery.min.js"></script>
-	<script defer src="./assets/scripts.js"></script>
-	<script src=".assets/service-worker.js"></script><!-- Mise en cache-->
+	<script defer src="./jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script defer rel="preload" src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script async rel="preload" src="./assets/maugallery.min.js"></script>
+	<script async rel="preload" src="./assets/scripts.js"></script>
 </head>
 
 <body>
@@ -94,7 +96,7 @@
 						<img src="./assets/images/slider/ryoji_slider.jpg" class="d-block w-100" width="2500"
 							height="1156"
 							alt="Homme en costume de travail traversant un passage piéton avec détermination"
-							loading="eager">
+							loading="eager" decoding="async">
 					</picture>
 				</div>
 				<div class="carousel-item">
@@ -103,14 +105,15 @@
 						<img src="./assets/images/slider/green_slider.jpg" class="d-block w-100" width="1024"
 							height="474"
 							alt="Foule en liesse dans la fosse lors d'un concert vibrant d'énergie et d'enthousiasme"
-							loading="lazy">
+							loading="lazy" decoding="async">
 					</picture>
 				</div>
 				<div class="carousel-item">
 					<picture>
 						<source srcset="./assets/images/slider/cisneros_slider.webp" type="image/webp">
 						<img src="./assets/images/slider/cisneros_slider.jpg" class="d-block w-100" width="2500"
-							height="1156" alt="un marié et une mariée s'embrassant lors de leur mariage" loading="lazy">
+							height="1156" alt="un marié et une mariée s'embrassant lors de leur mariage" loading="lazy"
+							decoding="async">
 					</picture>
 				</div>
 			</div>
@@ -133,7 +136,7 @@
 					<source srcset="./assets/images/nina.webp" type="image/webp">
 					<!-- Source JPEG pour les navigateurs qui ne supportent pas WebP -->
 					<img src="./assets/images/nina.jpg" width="500" height="499" alt="Portrait de Nina Carducci"
-						loading="eager">
+						loading="lazy">
 				</picture>
 			</div>
 			<div id="about-me">
@@ -161,62 +164,64 @@
 						src="./assets/images/gallery/concerts/aaron_concerts.jpg"
 						srcset="./assets/images/gallery/concerts/aaron_concerts.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="473" height="630"
-						alt="Vue depuis la foule lors d'un concert, des tons orangés embrasent la scène" loading="lazy">
+						alt="Vue depuis la foule lors d'un concert, des tons orangés embrasent la scène" loading="lazy"
+						decoding="async">
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali_entreprise.jpg"
 						srcset="./assets/images/gallery/entreprise/ali_entreprise.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="600" height="900"
-						alt="Homme confiant en costume élégant, adossé à un mur les bras croisés" loading="lazy" />
+						alt="Homme confiant en costume élégant, adossé à un mur les bras croisés" loading="lazy"
+						decoding="async" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/jason_entreprise.jpg"
 						srcset="./assets/images/gallery/entreprise/jason_entreprise.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="541"
 						alt="Femme extrêmement souriante participant avec enthousiasme à une réunion d'entreprise"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/hannah_mariage.jpg"
 						srcset="./assets/images/gallery/mariage/hannah_mariage.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="533" height="800"
 						alt="Main délicate du marié et de la mariée se tenant avec amour par les bouts des doigts"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/ade_portrait.jpg"
 						srcset="./assets/images/gallery/portraits/ade_portrait.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="534" height="800"
-						alt="Portrait d'un homme faisant face au soleil, fermant les yeux avec intensité"
-						loading="lazy" />
+						alt="Portrait d'un homme faisant face au soleil, fermant les yeux avec intensité" loading="lazy"
+						decoding="async" />
 
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/jakob_mariage.jpg"
 						srcset="./assets/images/gallery/mariage/jakob_mariage.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="640"
 						alt="Mariée et marié marchant en se tenant la main avec un palmiers majestueux en arrière-plan"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/nino_portrait.jpg"
 						srcset="./assets/images/gallery/portraits/nino_portrait.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="533" height="800"
 						alt="Femme rêveuse, derrière un grillage, se touchant les cheveux et regardant vers le sol"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/austin_concert.jpg"
 						srcset="./assets/images/gallery/concerts/austin_concert.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="670" height="447"
 						alt="Chanteur sur scène lors d'un concert en live, main tendue vers le haut, entouré de lumière"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/mateus_entreprise.jpg"
 						srcset="./assets/images/gallery/entreprise/mateus_entreprise.webp 1024w"
 						sizes="(max-width: 1024px) 100vw, 1024px" width="800" height="490"
 						alt="Femme riant aux éclats devant un ordinateur, regardant au loin, à côté d'une statue de la justice"
-						loading="lazy" />
+						loading="lazy" decoding="async" />
 				</div>
 			</div>
 			<div class="quote">
@@ -297,11 +302,11 @@
 						<input type="submit" value="Envoyer" />
 					</form>
 				</div>
-				<div class="picture right">
-					<!-- <img src="./assets/images/camera.png"
-						alt="Appareil photo artistiquement capturé, dans des teintes vibrantes d'orange et de bleu"
-						loading="lazy"> -->
-				</div>
+				<picture>
+					<source srcset="./assets/images/camera.webp" type="image/webp">
+					<img src="./assets/images/camera.jpg" width="500" height="499" alt="Portrait de Nina Carducci"
+						loading="lazy">
+				</picture>
 			</div>
 		</div>
 	</main>
