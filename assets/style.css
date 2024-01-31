@@ -9,7 +9,7 @@ body {
 }
 
 .top-header {
-	background-color: black;
+	background-color: white;
 	position: sticky;
 	top: 0;
 	z-index: 1000;
@@ -22,6 +22,20 @@ body {
 
 .top-header .name {
 	font-size: 26px;
+}
+
+h1 {
+	cursor: pointer;
+
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	a:hover {
+		color: #000;
+	}
 }
 
 .nav ul {
@@ -116,7 +130,8 @@ picture img {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 
 .item-column {
@@ -138,7 +153,9 @@ picture img {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
+
 
 .mg-prev,
 .mg-next {
